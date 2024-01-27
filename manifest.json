@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Simple User Agent changer",
+    "version": "1.0",
+    "description": "Modifies the browser's user agent.",
+    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+    "background": {
+      "scripts": ["src/background.js"],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
